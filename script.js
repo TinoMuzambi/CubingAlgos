@@ -24,3 +24,12 @@ const saveToLS = () => {
 	});
 	localStorage.setItem("cubing-statuses", JSON.stringify(saveStatuses));
 };
+
+const getFromLS = () => {
+	let saveStatuses = JSON.parse(localStorage.getItem("cubing-statuses"));
+	statusEls.forEach((statusEl, i) => {
+		statusEl.classList = `status ${saveStatuses[i]}`;
+	});
+};
+
+getFromLS();
