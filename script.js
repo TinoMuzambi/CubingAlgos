@@ -35,4 +35,5 @@ const getFromLS = () => {
 	});
 };
 
+saveToLS();
 getFromLS();
