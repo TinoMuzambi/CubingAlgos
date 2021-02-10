@@ -34,6 +34,13 @@ main .group h2 {
 	font-size: 2.5rem;
 	text-decoration: underline;
 	text-underline-offset: 3px;
+	margin-bottom: 2rem;
+}
+
+main .group .table {
+	background: rgb(59, 59, 59);
+	padding: 1rem;
+	border-radius: 5px;
 }
 
 main .group .table > div {
@@ -44,9 +51,6 @@ main .group .table > div {
 
 main .group .table .headings {
 	font-size: 1.2rem;
-}
-
-main .group .table .row {
 }
 
 main .group .table .row img {
