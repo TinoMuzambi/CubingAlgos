@@ -6,6 +6,7 @@ statusEls.forEach((statusEl) => {
 	statusEl.addEventListener("click", () => {
 		const currStatus = statusEl.classList.value.split(" ")[1];
 		statusEl.classList = `status ${getNext(currStatus)}`;
+		saveToLS();
 	});
 });
 
@@ -14,4 +15,12 @@ const getNext = (status) => {
 		return "green";
 	}
 	return STATUSES[STATUSES.indexOf(status) + 1];
+};
+
+const saveToLS = () => {
+	let saveStatuses = [];
+	statusEls.forEach((statusEl) => {
+		saveStatuses.push(statusEl.classList.value.split(" ")[1]);
+	});
+	localStorage.setItem("cubing-statuses", JSON.stringify(saveStatuses));
 };
