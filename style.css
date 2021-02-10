@@ -81,3 +81,29 @@ main article .table .row .status.yellow {
 main article .table .row .status.red {
 	background: rgb(252, 80, 80);
 }
+
+@media only screen and (max-width: 768px) {
+	main article .table > div {
+		grid-template-columns: unset;
+		gap: 2rem;
+	}
+
+	main article .table .headings {
+		display: none;
+	}
+
+	main article .table .row {
+		background-color: #333;
+		margin-bottom: 1rem;
+		padding: 1rem 1rem 2.5rem 1rem;
+	}
+
+	main article .table .row img {
+		padding: 1rem;
+	}
+
+	main article .table .row .status {
+		height: 25vh;
+		width: 90%;
+	}
+}
