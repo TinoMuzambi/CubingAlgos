@@ -19,4 +19,58 @@ body {
 
 header h1 {
 	font-size: 3rem;
+	margin-top: 2rem;
+}
+
+main .group {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 3rem;
+}
+
+main .group h2 {
+	font-size: 2.5rem;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+main .group .table > div {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	place-items: center;
+}
+
+main .group .table .headings {
+	font-size: 1.2rem;
+}
+
+main .group .table .row {
+}
+
+main .group .table .row img {
+	padding: 2rem;
+	width: 100%;
+}
+
+main .group .table .row h4 {
+	font-size: 1.3rem;
+}
+
+main .group .table .row .status {
+	width: 70%;
+	height: 70%;
+}
+
+main .group .table .row .status.green {
+	background: lightgreen;
+}
+
+main .group .table .row .status.yellow {
+	background: rgb(236, 143, 109);
+}
+
+main .group .table .row .status.red {
+	background: rgb(252, 80, 80);
 }
