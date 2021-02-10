@@ -47,7 +47,11 @@ main article .table > div {
 }
 
 main article .table .headings {
+	background: rgb(59, 59, 59);
+	padding: 1rem;
 	font-size: 1.2rem;
+	position: sticky;
+	top: 0;
 }
 
 main article .table .row img {
