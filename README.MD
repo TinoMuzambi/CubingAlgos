@@ -4,4 +4,4 @@ A simple website showing cubing algorithms for 2-look OLL & PLL. Website also ha
 
 ## Images
 
-Screenshots are taken from J Perm YouTube video available (here)[https://www.youtube.com/playlist?list=PLI24ciRbl8BUHEeOBaLXY4GpaVXSULYp4]
+Screenshots are taken from J Perm YouTube video available [here](https://www.youtube.com/playlist?list=PLI24ciRbl8BUHEeOBaLXY4GpaVXSULYp4)
