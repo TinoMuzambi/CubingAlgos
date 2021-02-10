@@ -28,6 +28,9 @@ main .group {
 	align-items: center;
 	flex-direction: column;
 	margin: 3rem;
+	background: rgb(59, 59, 59);
+	padding: 1rem;
+	border-radius: 5px;
 }
 
 main .group h2 {
@@ -35,12 +38,6 @@ main .group h2 {
 	text-decoration: underline;
 	text-underline-offset: 3px;
 	margin-bottom: 2rem;
-}
-
-main .group .table {
-	background: rgb(59, 59, 59);
-	padding: 1rem;
-	border-radius: 5px;
 }
 
 main .group .table > div {
