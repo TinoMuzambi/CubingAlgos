@@ -82,6 +82,10 @@ main article .table .row .status.red {
 	background: rgb(252, 80, 80);
 }
 
+footer {
+	margin-bottom: 1rem;
+}
+
 @media only screen and (max-width: 768px) {
 	main article .table > div {
 		grid-template-columns: unset;
