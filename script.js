@@ -1,10 +1,12 @@
 const STATUSES = ["green", "yellow", "red"];
 
-const statusEl = document.querySelector(".status");
+const statusEls = document.querySelectorAll(".status");
 
-statusEl.addEventListener("click", () => {
-	const currStatus = statusEl.classList.split()[1];
-	console.log(currStatus);
+statusEls.forEach((statusEl) => {
+	statusEl.addEventListener("click", () => {
+		const currStatus = statusEl.classList.value.split(" ")[1];
+		statusEl.classList = `status ${getNext(currStatus)}`;
+	});
 });
 
 const getNext = (status) => {
