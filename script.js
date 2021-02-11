@@ -1,7 +1,8 @@
 const STATUSES = ["red", "yellow", "green"];
 const TITLES = ["Still gotta get to it", "Working on it", "Got it"];
+let loading = true;
 
-// Your web app's Firebase configuration
+// Firebase config
 const firebaseConfig = {
 	apiKey: "AIzaSyBZzYFYsjJ6B5KJDvgtIY2pGswOkl_q0qM",
 	authDomain: "cubingalgos.firebaseapp.com",
@@ -10,8 +11,11 @@ const firebaseConfig = {
 	messagingSenderId: "38468774650",
 	appId: "1:38468774650:web:4aa0b84fcea425df0b3743",
 };
-// Initialize Firebase
+
+// Initialise Firebase
 firebase.initializeApp(firebaseConfig);
+
+// Initialise firestore.
 const db = firebase.firestore();
 
 const statusEls = document.querySelectorAll(".status");
