@@ -54,16 +54,16 @@ const saveToLS = () => {
 
 // Get current statuses from local storage.
 const getFromLS = async () => {
-	let saveStatuses = JSON.parse(localStorage.getItem("cubing-statuses"));
+	// let saveStatuses = JSON.parse(localStorage.getItem("cubing-statuses"));
 	// Set classlist based on status.
-	statusEls.forEach((statusEl, i) => {
-		statusEl.classList = `status ${saveStatuses[i]}`;
-		statusEl.title = TITLES[STATUSES.indexOf(saveStatuses[i])];
-	});
 	let dbStatuses;
 	const snapshot = await db.collection("statuses").get();
 	snapshot.forEach((doc) => {
-		console.log(doc.data().statuses);
+		dbStatuses = doc.data().statuses;
+	});
+	statusEls.forEach((statusEl, i) => {
+		statusEl.classList = `status ${dbStatuses[i]}`;
+		statusEl.title = TITLES[STATUSES.indexOf(dbStatuses[i])];
 	});
 	spinner.classList.add("finish");
 };
