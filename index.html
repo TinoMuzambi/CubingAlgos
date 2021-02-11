@@ -22,12 +22,24 @@
 				<div class="table">
 					<div class="headings">
 						<h3>Stage</h3>
-						<h3>Moves</h3>
+						<h3>
+							<a
+								href="https://www.youtube.com/watch?v=24eHm4ri8WM"
+								target="_blank"
+								>Moves</a
+							>
+						</h3>
 						<h3>Got It Down?</h3>
 					</div>
 					<div class="row">
 						<div class="holder">
-							<img src="./img/line.png" alt="line" />
+							<div class="img">
+								<div class="overlay">
+									Ignore edges and hold the line horizontally. Afterwards you
+									should have a cross (ignoring edges).
+								</div>
+								<img src="./img/line.png" alt="line" />
+							</div>
 							<p>Line</p>
 						</div>
 						<h4>F(R U R’ U’)F’</h4>
@@ -35,7 +47,13 @@
 					</div>
 					<div class="row">
 						<div class="holder">
-							<img src="./img/l-shape.png" alt="l shape" />
+							<div class="img">
+								<div class="overlay">
+									Move L shape to the front right. Front moves are double layer
+									moves. Afterwards you should have a cross (ignoring edges)
+								</div>
+								<img src="./img/l-shape.png" alt="l shape" />
+							</div>
 							<p>L-shape</p>
 						</div>
 						<h4>f(R U R’ U’)f’</h4>
@@ -43,15 +61,33 @@
 					</div>
 					<div class="row">
 						<div class="holder">
-							<img src="./img/dot.png" alt="dot" />
+							<div class="img">
+								<div class="overlay">
+									This is for exactly dot with no edges. After the first set of
+									moves, you should have an L shape. Then proceed with the next
+									set of moves and afterwards you should have a cross (ignoring
+									edges).
+								</div>
+								<img src="./img/dot.png" alt="dot" />
+							</div>
 							<p>Dot</p>
 						</div>
 						<h4>F(R U R’ U’)F’ f(R U R’ U’)f’</h4>
 						<div class="status green" title="Got it"></div>
 					</div>
+					<hr />
 					<div class="row">
 						<div class="holder">
-							<img src="./img/sune.png" alt="sune" />
+							<div class="img">
+								<div class="overlay">
+									Once you have the cross, if there's only one corner, rotate
+									the top so that it's on the front and so that you can see a
+									yellow sticker facing you. If the sticker facing you is on the
+									right, do this algo. Afterwards, the entire top should be
+									yellow.
+								</div>
+								<img src="./img/sune.png" alt="sune" />
+							</div>
 							<p>Sune</p>
 						</div>
 						<h4>R U R' U R U2 R'</h4>
@@ -59,7 +95,16 @@
 					</div>
 					<div class="row">
 						<div class="holder">
-							<img src="./img/antisune.png" alt="antisune" />
+							<div class="img">
+								<div class="overlay">
+									Once you have the cross, if there's only one corner, rotate
+									the top so that it's on the front and so that you can see a
+									yellow sticker facing you. If the sticker facing you is on the
+									left, do this algo. Afterwards, the entire top should be
+									yellow.
+								</div>
+								<img src="./img/antisune.png" alt="antisune" />
+							</div>
 							<p>Antisune</p>
 						</div>
 						<h4>L' U' L U' L' U2 L</h4>
@@ -67,7 +112,14 @@
 					</div>
 					<div class="row">
 						<div class="holder">
-							<img src="./img/h.png" alt="h" />
+							<div class="img">
+								<div class="overlay">
+									Once you have the cross, if there are no corners solved and
+									the two adjacant yellow stickers are opposite each other do
+									this algo. Afterwards, the entire top should be yellow.
+								</div>
+								<img src="./img/h.png" alt="h" />
+							</div>
 							<p>Two Yellow Corners, Others Opposite</p>
 						</div>
 						<h4>F(R U R' U')3 F'</h4>
@@ -75,7 +127,16 @@
 					</div>
 					<div class="row">
 						<div class="holder">
-							<img src="./img/pi.png" alt="pi" />
+							<div class="img">
+								<div class="overlay">
+									Once you have the cross, if there are no corners solved and
+									the two adjacant yellow stickers are not opposite each other
+									do this algo. Rotate the top so that a single yellow sticker
+									is facing you first. Afterwards, the entire top should be
+									yellow.
+								</div>
+								<img src="./img/pi.png" alt="pi" />
+							</div>
 							<p>Two Yellow Corners, Others Not Opposite</p>
 						</div>
 						<h4>R U2(R2 U' R2 U' R2) U2 R</h4>
@@ -83,7 +144,17 @@
 					</div>
 					<div class="row">
 						<div class="holder">
-							<img src="./img/l.png" alt="l" />
+							<div class="img">
+								<div class="overlay">
+									If after the cross there are two corners solved and they're
+									diagonal from each other, do this algo. Rotate the top so that
+									one of the corners is on the front right and make sure you can
+									see the other two yellow corner stickers first. Then rotate
+									the cube so the white face is facing you. Afterwards, the
+									entire top should be yellow.
+								</div>
+								<img src="./img/l.png" alt="l" />
+							</div>
 							<p>L</p>
 						</div>
 						<h4>x(R' U R D') (R' U' R D)</h4>
@@ -91,7 +162,17 @@
 					</div>
 					<div class="row">
 						<div class="holder">
-							<img src="./img/t.png" alt="t" />
+							<div class="img">
+								<div class="overlay">
+									If after the cross there are two corners solved and the two
+									solved corners are adjacent and the other two yellow stickers
+									face opposite directions, do this algo. Rotate the top so that
+									a yellow sticker is facing you first. Then rotate the cube so
+									the white face is facing you. Afterwards, the entire top
+									should be yellow.
+								</div>
+								<img src="./img/t.png" alt="t" />
+							</div>
 							<p>Two Yellow Corners Opposite</p>
 						</div>
 						<h4>x(L U R' U') (L' U R U')</h4>
@@ -99,7 +180,16 @@
 					</div>
 					<div class="row">
 						<div class="holder">
-							<img src="./img/u.png" alt="u" />
+							<div class="img">
+								<div class="overlay">
+									If after the cross there are two corners solved and the two
+									solved corners are adjacent and the other two yellow stickers
+									are adjacent as well, do this algo. Rotate the top so the two
+									yellow stickers are facing you first. Afterwards, the entire
+									top should be yellow.
+								</div>
+								<img src="./img/u.png" alt="u" />
+							</div>
 							<p>Two Yellow Corners Adjacent</p>
 						</div>
 						<h4>R2 D (R' U2 R) D' (R' U2 R')</h4>
@@ -112,16 +202,28 @@
 				<div class="table">
 					<div class="headings">
 						<h3>Stage</h3>
-						<h3>Moves</h3>
+						<h3>
+							<a
+								href="https://www.youtube.com/watch?v=24eHm4ri8WM"
+								target="_blank"
+								>Moves</a
+							>
+						</h3>
 						<h3>Got it Down?</h3>
 					</div>
 
 					<div class="row">
 						<div class="holder">
-							<img
-								src="./img/diagonal-corner-swap.png"
-								alt="diagonal-corner-swap"
-							/>
+							<div class="img">
+								<div class="overlay">
+									If all the corners are different, do this algo. Afterwards,
+									all the corners should be solved.
+								</div>
+								<img
+									src="./img/diagonal-corner-swap.png"
+									alt="diagonal-corner-swap"
+								/>
+							</div>
 							<p>All Corners Different</p>
 						</div>
 						<h4>(F R U' R' U' R U R' F') (R U R' U' R' F R F')</h4>
@@ -129,18 +231,35 @@
 					</div>
 					<div class="row">
 						<div class="holder">
-							<img
-								src="./img/adjacent-corner-swap.png"
-								alt="adjacent-corner-swap"
-							/>
+							<div class="img">
+								<div class="overlay">
+									If two corners are solved and all the others aren't, do this
+									algo. Rotate the top so the solved corners go to the left
+									first. Afterwards, all the corners should be solved.
+								</div>
+								<img
+									src="./img/adjacent-corner-swap.png"
+									alt="adjacent-corner-swap"
+								/>
+							</div>
 							<p>Two Solved Corners Others Different</p>
 						</div>
 						<h4>(R U R' U' R' F R2 U' R' U' R U R' F')</h4>
 						<div class="status red" title="Still gotta get to it"></div>
 					</div>
+					<hr />
 					<div class="row">
 						<div class="holder">
-							<img src="./img/3-edge-cycle-1.png" alt="3-edge-cycle-1" />
+							<div class="img">
+								<div class="overlay">
+									Once all the corners are solved and one of the edges is
+									already solved, rotate the top so the solved edge is at the
+									back first. Then check for the sides on the left and the
+									right, if the edge on the right needs to move to the left, do
+									this algo. Afterwards, the cube should be solved.
+								</div>
+								<img src="./img/3-edge-cycle-1.png" alt="3-edge-cycle-1" />
+							</div>
 							<p>Edge Going to Left Side</p>
 						</div>
 						<h4>R U' R U R U R U' R' U' R2</h4>
@@ -148,7 +267,16 @@
 					</div>
 					<div class="row">
 						<div class="holder">
-							<img src="./img/3-edge-cycle-2.png" alt="3-edge-cycle-2" />
+							<div class="img">
+								<div class="overlay">
+									Once all the corners are solved and one of the edges is
+									already solved, rotate the top so the solved edge is at the
+									back first. Then check for the sides on the left and the
+									right, if the edge on the left needs to move to the right, do
+									this algo. Afterwards, the cube should be solved.
+								</div>
+								<img src="./img/3-edge-cycle-2.png" alt="3-edge-cycle-2" />
+							</div>
 							<p>Edge Going to Right Side</p>
 						</div>
 						<h4>R2 U R U R' U' R' U' R' U R'</h4>
@@ -156,10 +284,17 @@
 					</div>
 					<div class="row">
 						<div class="holder">
-							<img
-								src="./img/opposite-edge-swap.png"
-								alt="opposite-edge-swap"
-							/>
+							<div class="img">
+								<div class="overlay">
+									Once all the corners are solved and no edges are already
+									solved and the opposite edges need to swap, do this algo. (U'
+									can be replaced with U) Afterwards, the cube should be solved.
+								</div>
+								<img
+									src="./img/opposite-edge-swap.png"
+									alt="opposite-edge-swap"
+								/>
+							</div>
 							<p>No Edges Already Solved - Opposites Swap</p>
 						</div>
 						<h4>M2 U' M2 U2 M2 U' M2</h4>
@@ -167,10 +302,17 @@
 					</div>
 					<div class="row">
 						<div class="holder">
-							<img
-								src="./img/adjacent-edge-swap.png"
-								alt="adjacent-edge-swap"
-							/>
+							<div class="img">
+								<div class="overlay">
+									Once all the corners are solved and no edges are already
+									solved and the adjacent pairs of edges need to swap, do this
+									algo. (M' goes upwards) Afterwards, the cube should be solved.
+								</div>
+								<img
+									src="./img/adjacent-edge-swap.png"
+									alt="adjacent-edge-swap"
+								/>
+							</div>
 							<p>No Edges Already Solved - Adjacent Swap</p>
 						</div>
 						<h4>M' U' M2 U' M2 U' M' U2 M2</h4>

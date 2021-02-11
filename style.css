@@ -55,18 +55,54 @@ main article .table .headings {
 	z-index: 2;
 }
 
+main article .table .headings a {
+	color: white;
+	text-decoration: none;
+}
+
 main article .table .row .holder {
-	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
+	margin: 2rem 0 0 2rem;
+	overflow: hidden;
 }
 
-main article .table .row .holder img {
-	padding: 2rem 2rem 0.5rem 2rem;
+main article .table .row .holder .img {
 	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+main article .table .row .holder .img .overlay {
+	transition: all 0.5s ease;
+	background: rgba(59, 59, 59, 0.7);
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 99%;
+	transform: translateY(100%);
+	padding: 2rem;
+	text-align: center;
+	font-weight: 500;
+}
+
+main article .table .row .holder .img:hover > .overlay {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+main article .table .row .holder .img img {
+	width: 100%;
+	height: 100%;
 	-webkit-user-drag: none;
 }
 
@@ -76,6 +112,8 @@ main article .table .row .holder p {
 
 main article .table .row h4 {
 	font-size: 1.3rem;
+	width: 90%;
+	text-align: center;
 }
 
 main article .table .row .status {
@@ -95,6 +133,14 @@ main article .table .row .status.yellow {
 
 main article .table .row .status.red {
 	background: rgb(252, 80, 80);
+}
+
+main article hr {
+	border: none;
+	height: 3px;
+	margin-top: 2rem;
+	color: #333;
+	background-color: #333;
 }
 
 footer {
