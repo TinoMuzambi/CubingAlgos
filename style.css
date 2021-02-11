@@ -139,6 +139,25 @@ footer {
 	margin-bottom: 1rem;
 }
 
+.spinner {
+	position: absolute;
+	right: 1rem;
+	top: 40%;
+	transform: translateY(-50%);
+	font-size: 2em;
+	animation: spinLogo 2s infinite ease-out;
+	z-index: 101;
+}
+
+@keyframes spinLogo {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+
 @media only screen and (max-width: 768px) {
 	main article .table > div {
 		grid-template-columns: unset;
