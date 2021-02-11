@@ -107,6 +107,8 @@ main article .table .row .holder p {
 
 main article .table .row h4 {
 	font-size: 1.3rem;
+	width: 90%;
+	text-align: center;
 }
 
 main article .table .row .status {
