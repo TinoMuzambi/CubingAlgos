@@ -163,8 +163,18 @@ footer {
 		padding: 1rem 1rem 2.5rem 1rem;
 	}
 
-	main article .table .row img {
+	main article .table .row .holder {
+		margin: 0;
+	}
+
+	main article .table .row .holder .img,
+	main article .table .row .holder .img img {
+		padding: 0rem;
+	}
+
+	main article .table .row .holder .img .overlay {
 		padding: 1rem;
+		font-size: 0.8rem;
 	}
 
 	main article .table .row .status {
