@@ -63,7 +63,6 @@ main article .table .headings a {
 main article .table .row .holder {
 	width: 100%;
 	margin: 2rem 0 0 2rem;
-	overflow: hidden;
 }
 
 main article .table .row .holder .img {
@@ -80,7 +79,6 @@ main article .table .row .holder .img .overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
-
 	width: 100%;
 	height: 99%;
 	transform: translateY(100%);
