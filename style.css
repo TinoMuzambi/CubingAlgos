@@ -55,6 +55,11 @@ main article .table .headings {
 	z-index: 2;
 }
 
+main article .table .headings a {
+	color: white;
+	text-decoration: none;
+}
+
 main article .table .row .holder {
 	display: flex;
 	justify-content: center;
