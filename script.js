@@ -1,5 +1,5 @@
-const STATUSES = ["green", "yellow", "red"];
-const TITLES = ["Got it", "Working on it", "Still gotta get to it"];
+const STATUSES = ["red", "yellow", "green"];
+const TITLES = ["Still gotta get to it", "Working on it", "Got it"];
 
 const statusEls = document.querySelectorAll(".status");
 
@@ -12,8 +12,8 @@ statusEls.forEach((statusEl, i) => {
 });
 
 const getNext = (status) => {
-	if (status === "red") {
-		return "green";
+	if (status === "green") {
+		return "red";
 	}
 	return STATUSES[STATUSES.indexOf(status) + 1];
 };
