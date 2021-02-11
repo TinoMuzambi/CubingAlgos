@@ -56,42 +56,43 @@ main article .table .headings {
 }
 
 main article .table .row .holder {
-	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
-	overflow: hidden;
+	margin: 2rem 0 0 2rem;
 }
 
 main article .table .row .holder .img {
 	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
 }
 
-main article .table .row .holder .overlay {
+main article .table .row .holder .img .overlay {
 	transition: all 1s ease;
 	content: attr(data-explanation);
-	margin: 2rem 0 0.5rem 2rem;
-	background: rgba(255, 255, 255, 0.3);
+	background: rgba(255, 255, 255, 0.8);
 	position: absolute;
 	top: 0;
 	left: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 89.4%;
-	height: 84%;
-	transform: translateY(200%);
+	width: 100%;
+	height: 100%;
+	transform: translateY(100%);
 }
 
-main article .table .row .holder:hover > .overlay {
+main article .table .row .holder .img:hover > .overlay {
 	transform: translateY(0);
 }
 
-main article .table .row .holder img {
-	padding: 2rem 2rem 0.5rem 2rem;
+main article .table .row .holder .img img {
 	width: 100%;
+	height: 100%;
 	-webkit-user-drag: none;
 }
 
