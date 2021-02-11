@@ -72,9 +72,9 @@ main article .table .row .holder .img {
 }
 
 main article .table .row .holder .img .overlay {
-	transition: all 1s ease;
-	content: attr(data-explanation);
-	background: rgba(255, 255, 255, 0.8);
+	transition: all 0.5s ease;
+	/* content: attr(data-explanation); */
+	background: rgba(59, 59, 59, 0.5);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -82,8 +82,10 @@ main article .table .row .holder .img .overlay {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 100%;
-	transform: translateY(100%);
+	height: 99%;
+	transform: translateY(102%);
+	padding: 2rem;
+	text-align: center;
 }
 
 main article .table .row .holder .img:hover > .overlay {
