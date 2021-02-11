@@ -153,8 +153,8 @@ footer {
 
 .spinner div {
 	position: absolute;
-	width: 50vw;
-	height: 50vw;
+	width: 40vw;
+	height: 40vw;
 	border: 2px solid #a161c6;
 	border-top-color: transparent;
 	border-radius: 50%;
