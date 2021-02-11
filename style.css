@@ -61,6 +61,7 @@ main article .table .row .holder {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	width: 100%;
 }
 
 main article .table .row .holder img {
