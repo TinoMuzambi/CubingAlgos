@@ -68,6 +68,7 @@ main article .table .row .status {
 	width: 70%;
 	height: 70%;
 	cursor: pointer;
+	transition: all 1s ease;
 }
 
 main article .table .row .status.green {
