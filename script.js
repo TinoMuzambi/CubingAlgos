@@ -18,7 +18,9 @@ firebase.initializeApp(firebaseConfig);
 // Initialise firestore.
 const db = firebase.firestore();
 
+// Get elements
 const statusEls = document.querySelectorAll(".status");
+const spinner = document.querySelector(".spinner");
 
 statusEls.forEach((statusEl, i) => {
 	// Add click event listener pn divs for changing statuses.
@@ -63,6 +65,7 @@ const getFromLS = async () => {
 	snapshot.forEach((doc) => {
 		console.log(doc.data().statuses);
 	});
+	spinner.classList.add("finish");
 };
 
 // Get current statuses from local storage when page loads.

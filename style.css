@@ -147,6 +147,8 @@ footer {
 	left: 0;
 	z-index: 10;
 	background: #333;
+	transition: all 1s ease;
+	opacity: 1;
 }
 
 .spinner div {
@@ -160,6 +162,11 @@ footer {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.spinner.finish {
+	opacity: 0;
+	pointer-events: none;
 }
 
 @keyframes spinner-content {
