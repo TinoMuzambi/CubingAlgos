@@ -22,11 +22,12 @@ body {
 
 .progress {
 	position: fixed;
-	top: 2rem;
+	top: 1rem;
 	right: 2rem;
 	background: #7c409e;
 	padding: 1rem;
 	border-radius: 10000px;
+	z-index: 5;
 }
 
 header h1 {

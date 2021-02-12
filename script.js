@@ -21,6 +21,7 @@ const db = firebase.firestore();
 // Get elements
 const statusEls = document.querySelectorAll(".status");
 const spinner = document.querySelector(".spinner");
+const progress = document.querySelector(".progress h1");
 
 statusEls.forEach((statusEl, i) => {
 	// Add click event listener pn divs for changing statuses.
@@ -61,6 +62,8 @@ const saveToLS = async () => {
 // Get current statuses from local storage.
 const getFromLS = async () => {
 	let dbStatuses;
+	let greens = 0;
+
 	// Get statuses from db.
 	const snapshot = await db.collection("statuses").get();
 	snapshot.forEach((doc) => {
@@ -69,8 +72,11 @@ const getFromLS = async () => {
 	// Set classlist based on status.
 	statusEls.forEach((statusEl, i) => {
 		statusEl.classList = `status ${dbStatuses[i]}`;
+		dbStatuses[i] === "green" && greens++;
 		statusEl.title = TITLES[STATUSES.indexOf(dbStatuses[i])];
 	});
+	progress.innerText = `${greens}/${statusEls.length}`;
+
 	// Get rid of spinner once data is loaded.
 	spinner.classList.add("finish");
 };
