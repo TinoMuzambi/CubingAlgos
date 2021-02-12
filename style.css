@@ -20,6 +20,15 @@ body {
 	min-height: 100vh;
 }
 
+.progress {
+	position: fixed;
+	top: 2rem;
+	right: 2rem;
+	background: #7c409e;
+	padding: 1rem;
+	border-radius: 10000px;
+}
+
 header h1 {
 	font-size: 3rem;
 	margin-top: 2rem;
