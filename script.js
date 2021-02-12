@@ -41,14 +41,13 @@ const getNext = (status) => {
 	return STATUSES[STATUSES.indexOf(status) + 1];
 };
 
-// Save current statuses to local storage.
+// Save current statuses to database.
 const saveToDB = async () => {
 	let saveStatuses = [];
 	// Get status based on classlist.
 	statusEls.forEach((statusEl) => {
 		saveStatuses.push(statusEl.classList.value.split(" ")[1]);
 	});
-	localStorage.setItem("cubing-statuses", JSON.stringify(saveStatuses));
 	const statusesRef = db.collection("statuses").doc("q6UaTNEWbgTTFfcQUXiN");
 
 	await statusesRef.set({
@@ -59,7 +58,7 @@ const saveToDB = async () => {
 	getFromDB();
 };
 
-// Get current statuses from local storage.
+// Get current statuses from database.
 const getFromDB = async () => {
 	let dbStatuses;
 	let greens = 0;
@@ -72,14 +71,16 @@ const getFromDB = async () => {
 	// Set classlist based on status.
 	statusEls.forEach((statusEl, i) => {
 		statusEl.classList = `status ${dbStatuses[i]}`;
+		// Count number of statuses marked green.
 		dbStatuses[i] === "green" && greens++;
 		statusEl.title = TITLES[STATUSES.indexOf(dbStatuses[i])];
 	});
+	// Set progress based on number of green statuses.
 	progress.innerText = `${greens}/${statusEls.length}`;
 
 	// Get rid of spinner once data is loaded.
 	spinner.classList.add("finish");
 };
 
-// Get current statuses from local storage when page loads.
+// Get current statuses from database when page loads.
 getFromDB();
