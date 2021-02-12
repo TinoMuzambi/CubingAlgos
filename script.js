@@ -29,7 +29,7 @@ statusEls.forEach((statusEl, i) => {
 		const currStatus = statusEl.classList.value.split(" ")[1];
 		statusEl.classList = `status ${getNext(currStatus)}`;
 		// Save to LS on click.
-		saveToLS();
+		saveToDB();
 	});
 });
 
@@ -42,7 +42,7 @@ const getNext = (status) => {
 };
 
 // Save current statuses to local storage.
-const saveToLS = async () => {
+const saveToDB = async () => {
 	let saveStatuses = [];
 	// Get status based on classlist.
 	statusEls.forEach((statusEl) => {
@@ -56,11 +56,11 @@ const saveToLS = async () => {
 	});
 
 	// Call get to update UI.
-	getFromLS();
+	getFromDB();
 };
 
 // Get current statuses from local storage.
-const getFromLS = async () => {
+const getFromDB = async () => {
 	let dbStatuses;
 	let greens = 0;
 
@@ -82,4 +82,4 @@ const getFromLS = async () => {
 };
 
 // Get current statuses from local storage when page loads.
-getFromLS();
+getFromDB();
